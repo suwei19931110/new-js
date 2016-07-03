@@ -1,5 +1,4 @@
-$(document).ready(function(){
-    $('p').click(function(){
-        $(this).hide()
-    })
-})
+.header{
+  width:500px;
+  border:1px solid red;
+}
