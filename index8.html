@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <title>work for js</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
-   <!-- <script src="demo.js"></script>-->
+    <script>
+        window.onload=function(){
+            var time=new Date();
+            var h=time.getHours();
+            var m=time.getMinutes();
+            var s=time.getMinutes();
+            getElementById('txt').innerHTML=h+m+s;
+
+        }
+    </script>
 
 </head>
 <body>
-    <p id='txt'>我会变</p>
-    <button type="button" onclick="clickq()">提交</button>
-    <script>
-        function click(){
-            alert('nihao');
-        }
-    </script>
+<input type="text"value='nihao' id='txt'/>
 </body>
 </html>
