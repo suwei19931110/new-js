@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+	<style>
+		*{margin:0;padding:0;}
+		a{text-decoration:none;color:black;}
+		.nav {width:600px;height:30px;background:#f0f0f0;}
+		.nav ul{list-style:none;}
+		ul li{width:90px;float:left;line-height:30px;text-align:center;display:block;background:blue;margin:0 1px;}
+		ul li ul {display:none;}
+	</style>
+	<script>
+		function showsubmit(li){
+			var submenu =li.getElementsByTagName('ul')[0];
+			submenu.style.display='block';
+		}
+		function hidesubmit(li){
+			var submenu =li.getElementsByTagName('ul')[0];
+			submenu.style.display='none';
+		}
+	</script>
+</head>
+<body> 
+<div class="nav">
+	<ul>
+		<li><a href="#">我的首页</a></li>
+		<li onmouseover='showsubmit(this)' onmouseout='hidesubmit(this)'><a href="#">我的关注</a>
+				<ul>
+					<li><a href="#">新浪</a></li>
+					<li><a href="#">任贤</a></li>
+					<li><a href="#">腾讯</a></li>
+				</ul>
+		</li>
+		<li><a href="#">热线</a></li>
+		<li><a href="#">联系我们</a></li>
+	</ul>
+</div>
+</body>
+</html>
